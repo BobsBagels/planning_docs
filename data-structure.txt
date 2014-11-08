@@ -1,0 +1,44 @@
+Products
+———————————————————————————
+name
+description
+price
+image_url
+
+Category
+———————————————————————————
+name
+
+Cart
+———————————————————————————
+[used for sessions, with unique cart for every session]
+
+LineItem
+———————————————————————————
+references product
+belongs_to cart
+quantity :integer, default: 1
+[[line item will need the options too]]
+  keep the options in a different table, and make a join table with the line items
+store the price of the object
+
+Order
+———————————————————————————
+
+
+User
+———————————————————————————
+username
+password
+email
+first name
+last name
+street 1
+street 2
+city
+state
+zip
+cc info
+
+
+on the menu page, keep the cart always visible.
